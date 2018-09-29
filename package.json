@@ -7,8 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/index.js",
-    "start": "node src/index.js",
-    "flow": "flow"
+    "start": "node src/index.js"
   },
   "husky": {
     "hooks": {
@@ -35,7 +34,6 @@
     "eslint": "^5.6.1",
     "eslint-config-esnext": "^4.0.0",
     "eslint-config-node": "^4.0.0",
-    "flow-bin": "^0.81.0",
     "husky": "^1.0.1",
     "lint-staged": "^7.3.0",
     "nodemon": "^1.18.4",
