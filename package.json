@@ -1,0 +1,44 @@
+{
+  "name": "nodejs-apollo",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/almarto/nodejs-apollo.git",
+  "author": "almarto",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "flow": "flow"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "eslint --fix",
+      "prettier --bracket-spacing=false --write",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "node",
+      "esnext"
+    ]
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.16.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-config-esnext": "^4.0.0",
+    "eslint-config-node": "^4.0.0",
+    "flow-bin": "^0.81.0",
+    "husky": "^1.0.1",
+    "lint-staged": "^7.3.0",
+    "nodemon": "^1.18.4",
+    "prettier": "^1.14.3"
+  }
+}
